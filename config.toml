@@ -1,0 +1,69 @@
+baseURL = "http://xumf.net/"
+title = "小蜜蜂"
+theme = "manis"
+# Copyright notice. Note: You can use HTML tag here
+copyright = "&copy; 2018  xumf.net</a>"
+pluralizeListTitles = false
+# Minimum number of posts before paginate navigation show up
+paginate = 10
+canonifyURL = true
+# Your disqus shortname
+disqusShortname = "xumf"
+# Edit this if you want to translate your blog
+defaultContentLanguage = "zh"
+
+googleAnalytics = "UA-118288238-1"
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+
+[params]
+	# If false, use minified CSS (ui.min.css)
+	debugCSS = false
+	# List of sections support disqus comments
+	disqusSections = ["blog"]
+	# Site meta description
+	description = "Sweet little Hugo's theme for personal website or blog."
+	# Site's Tagline (Subtitle or Keyword)
+	tagline = "Code Farming Engineer"
+	# If true give attribution to this theme
+	themeAttrib = false
+	# URL to license file, can be outside of your domain
+	licenseURL = "/about/license"
+
+	# Configure which section for Latest Posts
+	postSection = "blog"
+	# Configure which section for Latest Works
+	workSection = "work"
+
+	# 404 Configuration
+	head404 = "对不起，我找不到你想要的东西。"
+	sub404 = "返回 <a href='/'>主页</a>."
+
+	# Color of your website's accent
+	colorTheme = "#99CCCC"
+	# Maximum number of item in Latest Posts or Works
+	latestCount = 8
+	# Path to site's favicon image
+	faviconImg = "/images/logo.png"
+	# Date format in item list
+	dateFmt = "2006年 1月 02日"
+
+	# Code Highlighting (HighlightJS)
+	highlightJs = true
+	highlightJsLanguages = [ "common" ]
+	highlightJsStyle = "atelier-savanna-light"
+
+	# Social Links
+	email = "mail@xumf.net"
+	github = "https://github.com/xumf/"
+	gitlab = "http://gitlab.xumf.net"
+	# twitter = "https://twitter.com/yuri_boya"
+
+
+# Language Configuration
+#[languages.in]
+#	lang = "in"
+#	languageName = "Bahasa Indonesia"
+#	weight = 1
