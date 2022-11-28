@@ -50,8 +50,8 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --manis \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --theme=manis \
+            --baseURL "https://xumf.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
@@ -61,7 +61,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://xumf.github.io/
     runs-on: ubuntu-latest
     needs: build
     steps:
