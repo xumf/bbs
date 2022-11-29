@@ -21,6 +21,9 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
+      - name: Add Theme
+        run: mkdir themes && cd themes && git clone https://github.com/yursan9/manis-hugo-theme
+
       - name: Build
         run: hugo --theme=manis
 
