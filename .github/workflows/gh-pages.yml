@@ -20,12 +20,9 @@ jobs:
         with:
           hugo-version: 'latest'
           # extended: true
-
-      - name: Add Theme
-        run: mkdir themes && cd themes && git clone https://github.com/yursan9/manis-hugo-theme themes/manis
-
+          
       - name: Build
-        run: hugo --theme=manis
+        run: mkdir themes && cd themes && git clone https://github.com/yursan9/manis-hugo-theme themes/manis && hugo --theme=manis
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
